@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gradient Boosting Animation</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script defer src="gradient_boosting_animation.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    #plot { width: 600px; height: 400px; }
+  </style>
+</head>
+<body>
+  <h1>Gradient Boosting Animation</h1>
+  <div id="plot"></div>
+  <div style="margin-top:1em;">
+    <label>Tree number: <span id="tree-num-label">1</span></label>
+    <input id="tree-slider" type="range" min="1" max="100" value="1" step="1" style="width:300px;">
+  </div>
+  <div style="margin-top:1em;">
+    <label>Learning rate:
+      <select id="lr-select">
+        <option value="0.01">0.01</option>
+        <option value="0.05">0.05</option>
+        <option value="0.1">0.1</option>
+        <option value="0.2">0.2</option>
+        <option value="0.3">0.3</option>
+        <option value="0.5">0.5</option>
+        <option value="0.7">0.7</option>
+        <option value="1.0">1.0</option>
+      </select>
+    </label>
+  </div>
+</body>
+</html>
